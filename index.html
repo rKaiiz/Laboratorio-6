@@ -1,41 +1,154 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Inicio</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Fuentes de Google -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+  <!-- Iconos de Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #fff9f9;
+      color: #5a5a5a;
+    }
+    .navbar {
+      background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%) !important;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+    .navbar-brand, .nav-link {
+      font-family: 'Playfair Display', serif;
+      color: #fff !important;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    }
+    .nav-link:hover {
+      color: #f8f9fa !important;
+      text-decoration: underline;
+    }
+    h1, h2, h3 {
+      font-family: 'Playfair Display', serif;
+      color: #d35d6e;
+    }
+    .container {
+      background-color: white;
+      border-radius: 15px;
+      padding: 30px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+    .img-fluid {
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      border: 5px solid white;
+    }
+    .img-fluid:hover {
+      transform: scale(1.03);
+    }
+    .pet-icon {
+      font-size: 2rem;
+      margin: 0 10px;
+      color: #d35d6e;
+    }
+    .divider {
+      height: 2px;
+      background: linear-gradient(to right, transparent, #fad0c4, transparent);
+      margin: 30px 0;
+    }
+    .footer {
+      background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+      color: black;
+      padding: 20px 0;
+      text-align: center;
+      margin-top: 40px;
+    }
+  </style>
 </head>
 <body>
 
   <!-- Navegación -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="index.html">Jared Fabian Luna Delgadillo 2001978</a>
-      <div class="collapse navbar-collapse">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item"><a class="nav-link" href="pagina1.html">Página 1</a></li>
-          <li class="nav-item"><a class="nav-link" href="pagina2.html">Página 2</a></li>
-          <li class="nav-item"><a class="nav-link" href="pagina3.html">Página 3</a></li>
+      <a class="navbar-brand" href="index.html">
+        <i class="fas fa-paw me-2"></i>Mascotas Adorables
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="pagina1.html"><i class="fas fa-cat me-1"></i> Gatos</a></li>
+          <li class="nav-item"><a class="nav-link" href="pagina2.html"><i class="fas fa-dog me-1"></i> Perros</a></li>
+          <li class="nav-item"><a class="nav-link" href="pagina3.html"><i class="fas fa-dove me-1"></i> Loros</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
   <!-- Contenido principal -->
-  <div class="container text-center mt-5">
-    <h1 class="display-4">¡Gatos, Perros y Loros!</h1>
+  <div class="container text-center mt-4">
+    <h1 class="display-4 mb-4">
+      <i class="fas fa-heart pet-icon"></i>
+      ¡Gatos, Perros y Loros!
+      <i class="fas fa-heart pet-icon"></i>
+    </h1>
+    <p class="lead">Descubre la belleza y ternura de nuestras mascotas favoritas</p>
+    
+    <div class="divider"></div>
+    
+    <div class="row my-4 g-4">
+      <div class="col-md-4">
+        <img src="img/cat1.jpg" class="img-fluid" alt="Gato adorable">
+        <h3 class="mt-3">Gatos Elegantes</h3>
+        <p>Los felinos más hermosos y misteriosos que conquistan corazones.</p>
+      </div>
+      <div class="col-md-4">
+        <img src="img/dog1.jpg" class="img-fluid" alt="Perro juguetón">
+        <h3 class="mt-3">Perros Leales</h3>
+        <p>Compañeros fieles llenos de energía y amor incondicional.</p>
+      </div>
+      <div class="col-md-4">
+        <img src="img/parrot1.jpg" class="img-fluid" alt="Loro colorido">
+        <h3 class="mt-3">Loros Exóticos</h3>
+        <p>Aves inteligentes con plumajes vibrantes que alegran cualquier hogar.</p>
+      </div>
     </div>
-
-    <!-- Imágenes -->
-    <div class="row my-4">
-        <div class="col-md-4"><img src="img/cat1.jpg" class="img-fluid" alt="Imagen 1" ></div>
-        <div class="col-md-4"><img src="img/dog1.jpg" class="img-fluid" alt="Imagen 2" ></div>
-        <div class="col-md-4"><img src="img/parrot1.jpg" class="img-fluid" alt="Imagen 3" ></div>
+    
+    <div class="divider"></div>
+    
+    <div class="row mt-4">
+      <div class="col-md-8 mx-auto">
+        <h2><i class="fas fa-star me-2"></i>¿Por qué amamos a las mascotas?</h2>
+        <p class="text-start">Las mascotas nos brindan compañía incondicional, alegría en nuestros días grises y enseñan el verdadero significado del amor puro. Ya sea un gato independiente, un perro juguetón o un loro parlante, cada uno tiene una personalidad única que enriquece nuestras vidas.</p>
+      </div>
     </div>
+  </div>
 
-     <!-- Scripts de Bootstrap -->
+  <!-- Pie de página -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <p class="mb-0">
+            <i class="fas fa-paw me-2"></i>
+            Hola madafakers <33
+            <i class="fas fa-paw ms-2"></i>
+          </p>
+          <div class="mt-3">
+            <a href="#" class="text-white mx-2"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-white mx-2"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-white mx-2"><i class="fab fa-pinterest-p"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts de Bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
 </body>
 </html>
